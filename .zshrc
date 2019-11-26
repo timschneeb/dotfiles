@@ -122,7 +122,8 @@ POWERLEVEL9K_DIR_SHOW_WRITABLE=false
 POWERLEVEL9K_DISK_USAGE_ONLY_WARNING=true
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
       # =========================[ Line #1 ]=========================
-      os_icon                 # os identifier
+      #os_icon                 # os identifier
+      host
       root_indicator
       dir                     # current directory
       dir_writable            # git status
@@ -170,6 +171,13 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
       # battery               # internal battery
       # example               # example user-defined segment (see prompt_example function below)
 )
+POWERLEVEL9K_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL='\uE0BC'
+POWERLEVEL9K_RIGHT_PROMPT_FIRST_SEGMENT_START_SYMBOL='\uE0BA'
+# The left end of left prompt.
+POWERLEVEL9K_LEFT_PROMPT_FIRST_SEGMENT_START_SYMBOL='▒▓'
+# The right end of right prompt.
+POWERLEVEL9K_RIGHT_PROMPT_LAST_SEGMENT_END_SYMBOL='▓▒░'
+
 
 alias ls='lsd --group-dirs first'
 

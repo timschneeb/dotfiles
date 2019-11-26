@@ -3,6 +3,7 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+bindkey '^ ' autosuggest-accept
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -82,7 +83,8 @@ ZSH_THEME=powerlevel10k/powerlevel10k
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages colorize screen web-search autojump pip debian systemd themes encode64 git-extras sudo command-not-found cp dirhistory)
+plugins=(git zsh-autosuggestions colored-man-pages colorize screen web-search autojump pip debian systemd themes encode64 git-extras sudo command-not-found cp dirhistory)
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 source $ZSH/oh-my-zsh.sh
 

@@ -181,3 +181,6 @@ POWERLEVEL9K_RIGHT_PROMPT_LAST_SEGMENT_END_SYMBOL='▓▒░'
 
 alias ls='lsd --group-dirs first'
 
+
+# zsh-bd
+. $HOME/.zsh/plugins/bd/bd.zsh
